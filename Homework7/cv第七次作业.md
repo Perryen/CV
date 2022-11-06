@@ -167,7 +167,7 @@ if __name__ == '__main__':
 
 运行后，在data文件夹下会产生下列文件列表（每个文件列表均存储了用于训练和测试的图像路径）：
 
-![image](./results/image.png)
+![image]([./results/image.png](https://github.com/Perryen/CV/blob/main/Homework7/results/image))
 
 ### （5）构建SRResNet模型
 
