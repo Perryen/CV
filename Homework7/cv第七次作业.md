@@ -634,9 +634,9 @@ if __name__ == '__main__':
 
 ![](https://github.com/Perryen/CV/blob/main/Homework7/results/test.jpg?raw=true)
 
-![test_bicubic](C:\Users\pxy\Desktop\SRGAN\results\test_bicubic.jpg)
+![test_bicubic](https://github.com/Perryen/CV/blob/main/Homework7/results/test_bicubic.jpg?raw=true)
 
-![test_srgan](C:\Users\pxy\Desktop\SRGAN\results\test_srgan.jpg)
+![test_srgan](https://github.com/Perryen/CV/blob/main/Homework7/results/test_srgan.jpg?raw=true)
 
 ## 7、参考资料
 
