@@ -97,10 +97,7 @@ Github或者主页下载运行一个超分算法，获得结果试着训练一�
 
 ​		上图中，k表示卷积核大小，n表示输出通道数，s表示步长。除了深度残差模块和子像素卷积模块以外，在整个模型输入和输出部分均添加了一个卷积模块用于数据调整和增强。
 
-​		需要注意的是，SRResNet模型使用MSE作为目标函数，也就是通过模型还原出来的高分辨率图像与原始高分辨率图像的均方误差，公式如下：
-$$
-\left.L=\frac{1}{n} \sum_{i=1}^n \| F\left(X_i ; \Theta\right)\right)-Y_i \|^2
-$$
+​		需要注意的是，SRResNet模型使用MSE作为目标函数，也就是通过模型还原出来的高分辨率图像与原始高分辨率图像的均方误差.
 
 ​		MSE也是目前大部分超分重建算法采用的目标函数。后面我们会看到，使用该目标函数重建的超分图像并不能很好的符合人眼主观感受，SRGAN算法正是基于此进行的改进。
 
@@ -165,9 +162,6 @@ if __name__ == '__main__':
 
 ​		首先从utils中导入create_data_lists函数，该函数用于执行具体的JSON文件创建。在主函数部分设置好训练集train_folders和测试集test_folders文件夹路径，参数min_size=100用于检查训练集和测试集中的每张图像分辨率，无论是图像宽度还是高度，如果小于min_size则该图像路径不写入JSON文件列表中。output_folder用于指明最后的JSON文件列表存放路径。
 
-运行后，在data文件夹下会产生下列文件列表（每个文件列表均存储了用于训练和测试的图像路径）：
-
-![image]([./results/image.png](https://github.com/Perryen/CV/blob/main/Homework7/results/image))
 
 ### （5）构建SRResNet模型
 
@@ -638,7 +632,7 @@ if __name__ == '__main__':
 
 ​		从网上选取一张低分辨率的证件照片进行实验测试。原图像大小为130x93，然后分别对其进行双线性上采样以及超分重建，图像放大4倍，变为520x372。对比效果如下所示：(从左到右依次为：原图、bicubic上采样、超分重建)
 
-![](C:\Users\pxy\Desktop\SRGAN\results\test.jpg)
+![](https://github.com/Perryen/CV/blob/main/Homework7/results/test.jpg?raw=true)
 
 ![test_bicubic](C:\Users\pxy\Desktop\SRGAN\results\test_bicubic.jpg)
 
