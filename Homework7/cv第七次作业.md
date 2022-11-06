@@ -167,7 +167,7 @@ if __name__ == '__main__':
 
 运行后，在data文件夹下会产生下列文件列表（每个文件列表均存储了用于训练和测试的图像路径）：
 
-![image-20221106181310645](C:\Users\pxy\AppData\Roaming\Typora\typora-user-images\image-20221106181310645.png)
+![image](./results/image.png)
 
 ### （5）构建SRResNet模型
 
